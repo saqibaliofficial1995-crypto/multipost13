@@ -63,8 +63,8 @@ jobs:
       - name: Commit state updates
         if: ${{ inputs.dry_run != true }}
         run: |
-          git config user.name "hashirali3736-star"
-          git config user.email "hashirali3736@gmail.com"
+          git config user.name "saqibaliofficial1995-crypto"
+          git config user.email "saqibaliofficial1995@gmail.com"
           git add state/uploaded.json
           git diff --staged --quiet || git commit -m "Automated state update: uploaded videos [skip ci]"
           git push origin main
