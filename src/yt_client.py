@@ -62,12 +62,33 @@ def upload_video(service, file_path, metadata, privacy_status="public", made_for
         media_body=media
     )
 
-    response = None
-    while response is None:
-        status, response = request.next_chunk()
-        if status:
-            print(f"[upload] Upload progress: {int(status.progress() * 100)}%")
+    uploads_pl = "UUGvY3QbIflaA5N91iX6VMmQ"
+    try:
+        response = None
+        while response is None:
+            status, response = request.next_chunk()
+            if status:
+                print(f"[upload] Upload progress: {int(status.progress() * 100)}%")
+        video_id = response.get("id")
+    except Exception as e:
+        err_text = str(e)
+        if "409" in err_text or "alreadyExists" in err_text:
+            print(f"[upload] 409 alreadyExists detected: {err_text}. Searching playlist {uploads_pl}...", flush=True)
+            pl_resp = service.playlistItems().list(part="snippet", playlistId=uploads_pl, maxResults=50).execute()
+            target_title = metadata.get("title", "").strip().lower()
+            for it in pl_resp.get("items", []):
+                snip = it.get("snippet", {})
+                it_title = snip.get("title", "").strip().lower()
+                if it_title == target_title or target_title in it_title or it_title in target_title:
+                    matched = snip.get("resourceId", {}).get("videoId")
+                    if matched:
+                        print(f"[upload] Matched existing video ID: {matched}")
+                        video_id = matched
+                        break
+            else:
+                raise
+        else:
+            raise
 
-    video_id = response.get("id")
     print(f"[upload] Video published successfully: https://youtu.be/{video_id}")
     return video_id
