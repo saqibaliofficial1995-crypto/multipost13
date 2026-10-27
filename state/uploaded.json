@@ -111,6 +111,20 @@
         "#wildlife"
       ],
       "uploaded_at": "2026-10-26T15:17:02.051094+00:00"
+    },
+    "1CdU7Odp2xB230CzgvEWp1z8Nl4gkfCOb": {
+      "name": "Look What Headlights Revealed On This Lonely Highway (Snowy Forest Trail Crossing).mp4",
+      "yt_id": "v3mFVv7bl70",
+      "yt_url": "https://youtu.be/v3mFVv7bl70",
+      "title": "Park Ranger Greets a Friendly Marmot",
+      "topic": "wildlife encounter",
+      "tags_count": 12,
+      "hashtags": [
+        "#wildlife",
+        "#nature",
+        "#shorts"
+      ],
+      "uploaded_at": "2026-10-27T07:59:30.155694+00:00"
     }
   },
   "history": [
@@ -169,6 +183,13 @@
       "title": "Wildlife Officer Encounters a Massive Grizzly Bear Up Close",
       "topic": "wildlife encounters",
       "timestamp": "2026-10-26T15:17:02.051113+00:00"
+    },
+    {
+      "drive_id": "1CdU7Odp2xB230CzgvEWp1z8Nl4gkfCOb",
+      "yt_id": "v3mFVv7bl70",
+      "title": "Park Ranger Greets a Friendly Marmot",
+      "topic": "wildlife encounter",
+      "timestamp": "2026-10-27T07:59:30.155715+00:00"
     }
   ]
 }
