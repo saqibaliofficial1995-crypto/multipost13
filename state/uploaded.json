@@ -153,6 +153,20 @@
         "#animals"
       ],
       "uploaded_at": "2026-10-28T08:42:18.910261+00:00"
+    },
+    "1_nCoR95JL9BAoAL8ROi-nDTRsQg-UGJf": {
+      "name": "This Wild Creature Emerged Right Out Of The Darkness (Mountain Road Cliffside Goat).mp4",
+      "yt_id": "zJdjb3X_8Pw",
+      "yt_url": "https://youtu.be/zJdjb3X_8Pw",
+      "title": "A Gentle Encounter with a Wild Coyote",
+      "topic": "wildlife encounters",
+      "tags_count": 12,
+      "hashtags": [
+        "#shorts",
+        "#wildlife",
+        "#coyote"
+      ],
+      "uploaded_at": "2026-10-28T19:40:09.517765+00:00"
     }
   },
   "history": [
@@ -232,6 +246,13 @@
       "title": "Friendly Ranger Meets a Wild Porcupine",
       "topic": "wildlife encounters",
       "timestamp": "2026-10-28T08:42:18.910283+00:00"
+    },
+    {
+      "drive_id": "1_nCoR95JL9BAoAL8ROi-nDTRsQg-UGJf",
+      "yt_id": "zJdjb3X_8Pw",
+      "title": "A Gentle Encounter with a Wild Coyote",
+      "topic": "wildlife encounters",
+      "timestamp": "2026-10-28T19:40:09.517783+00:00"
     }
   ]
 }
